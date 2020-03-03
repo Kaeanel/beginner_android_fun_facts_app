@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     android:background="#51b46d"
     android:padding="50dp"
-    tools:context=".FunFactsActivity">
+    tools:context=".FunFactsActivity"
+    android:id="@+id/mainView">
 
     <TextView
         android:id="@+id/textView"
@@ -41,6 +42,7 @@
         android:layout_marginBottom="4dp"
         android:background="@android:color/background_light"
         android:text="Show another fun fact"
+        android:textColor="#51b46d"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
