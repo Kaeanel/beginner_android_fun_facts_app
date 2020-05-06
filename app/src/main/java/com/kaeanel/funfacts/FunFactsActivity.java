@@ -6,6 +6,7 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.text.style.BackgroundColorSpan;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.RelativeLayout;
@@ -15,6 +16,7 @@ import android.widget.Toast;
 import java.util.Random;
 
 public class FunFactsActivity extends AppCompatActivity {
+    public static final String TAG = FunFactsActivity.class.getSimpleName();
     private FactBook factBook = new FactBook();
     private ColorWheel colorWheel = new ColorWheel();
     // Declare our View variables
@@ -46,6 +48,7 @@ public class FunFactsActivity extends AppCompatActivity {
 
         showFactButton.setOnClickListener(listener);
 
-        Toast.makeText(this, "Yay! Out Activity was created!", Toast.LENGTH_SHORT).show();
+        //Toast.makeText(this, "Yay! Out Activity was created!", Toast.LENGTH_SHORT).show();
+        Log.d(TAG,"We're logging from the onCreate() method!");
     }
 }
